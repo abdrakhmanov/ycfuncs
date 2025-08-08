@@ -1,13 +1,15 @@
 from fastapi import FastAPI
+from starlette.applications import Starlette
 import logging
 from typing_extensions import Annotated, Doc
+from typing import Union
 
 
 class FastAPIHandler:
     def __init__(
         self,
         app: Annotated[
-            FastAPI,
+            Union[FastAPI, Starlette],
             Doc(
                 """
                 instance of FastAPI.

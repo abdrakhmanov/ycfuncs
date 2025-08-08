@@ -699,7 +699,7 @@ wheels = [
 
 [[package]]
 name = "ycfuncs"
-version = "25.8.7.2"
+version = "25.8.81530"
 source = { editable = "." }
 dependencies = [
     { name = "fastapi", extra = ["standard"] },
